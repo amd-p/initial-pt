@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos especiais</title>
+</head>
+<body>
+
+    <input type="search" name="search"/>
+    <datalist id="browsers">
+        <option value="">Selecione um navegador</option>
+        <option>Google Chrome</option>
+        <option>Microsoft Edge</option>
+        <option>Mozilla Firefox</option>
+        <option>Opera</option>
+    </datalist>
+    <hr>   
+    <select name="browsers">
+        <option value="">Selecione um navegador</option>
+        <option value="Chrome">Google Chrome</option>
+        <option value="Edge">Microsoft Edge</option>
+        <option value="Firefox">Mozilla Firefox</option>
+        <option value="Opera">Opera</option>
+    </select>
+    <br>
+    <code>
+        table tbody th{
+            background-color: lightgrey;
+        }
+    </code>
+    <br>
+    <details>
+    <summary>Como troco a cor de fundo de um elemento no HTML?</summary>
+    <p>Para executar essa ação utilize o comando background color no CSS</p>
+    </details>
+
+    <meter max="100" min="0" value="50"></meter>
+    <progress id="progress" max="100" min="0"></progress>
+    <script>
+        var progress = document.getElementById ('progress');
+        const interval = set.Interval(() => {
+        progress.value += 10;
+    }, 1000);
+        if (progress.value >= 100){
+            alert ('Carregamento completo')
+            clearInterval(interval)
+        }
+    </script>   
+</body>
+</html>
