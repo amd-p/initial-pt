@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <form onsubmit method="get">
+        <label>Nome:</label><input type="text" name="name"><br>
+        <label>Idade:</label><input type="number" name="age"><br>
+        <label>Profissão:</label>
+        <select name="prof">
+            <option value="">Selecione a área</option>
+            <option value="adm">Administrativo</option>
+            <option value="dia">Diarista</option>
+            <option value="ped">Pedreiro</option>
+            <option value="pin">Pintor</option>
+            <option value="ele">Eletricista</option>
+            <option value="out">Outros</option>
+        </select><br>
+        <label>Password:</label><input type="password" name="password"><br>
+        <br>
+        <label>Título:</label><input type="text" name="title"><br>
+        <label>Mensagem:</label>
+        <textarea rows="10" cols="30" name="msg"></textarea>
+
+        <button type="reset">Limpar</button>
+        <button type="submit" onclick="alert('Bem-vindo')">Entrar</button>
+        
+    </form>
+</body>
+</html>

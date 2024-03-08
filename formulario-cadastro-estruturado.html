@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+
+    <style>
+        .row{
+            margin: 5px;
+        }
+        label {
+            width:100px;
+            text-align: right;
+            display: inline-block;
+            padding-right: 5px;
+        }
+        fieldset{
+            margin: 15px 0;
+            border-radius: 10px;
+            border-color: rgb(185, 111, 255);
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="menu-lateral">
+    <div id="links">
+        <ul>
+            <li><a href="#">Páginal inicial</a></li>
+            <li><a href="#">Cadastro</a></li>
+            <li><a href="#">Busca</a></li>            
+        </ul>
+</div>
+    
+    <fieldset>
+    <legend>Dados Pessoais</legend>
+    <div class="row">
+        <label>Nome Completo:</label><input type="text"/>
+        <label>Data de nascimento:</label><input type="date"/>
+        <label>Estado:</label>
+            <select name="est">
+                <option value="">Selecione UF</option>
+                <option value="df">Distrito Federal</option>
+                <option value="go">Goiás</option>
+                <option value="mt">Mato Grosso</option>
+                <option value="ms">Mato Grosso do Sul</option>
+                <option value="al">Alagoas</option>
+                <option value="ba">Bahia</option>
+                <option value="ce">Ceará</option>
+                <option value="ma">Maranhão</option>
+                <option value="pb">Paraíba</option>
+                <option value="pe">Pernambuco</option>
+                <option value="pi">Piauí</option>
+                <option value="rn">Rio Grande do Norte</option>
+                <option value="se">Sergipe</option>
+                <option value="ac">Acre</option> 
+                <option value="ap">Amapá</option> 
+                <option value="am">Amazonas</option> 
+                <option value="pa">Pará</option> 
+                <option value="ro">Rondônia</option> 
+                <option value="rr">Roraima</option> 
+                <option value="to">Tocantins</option> 
+                <option value="es">Espiríto Santo</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="sp">São Paulo</option>
+                <option value="pr">Paraná</option>
+                <option value="rs">Rio Grande do Sul</option>
+                <option value="sc">Santa Catarina</option>
+            </select>
+        <label>CEP:</label><input type="number"/>
+        <label>Endereço:</label><input type="text"/>
+        <label>Cidade:</label><input type="text"/>
+    </div>
+    </fieldset>
+
+    <fieldset>
+    <legend>Dados Profissionais</legend>
+    <div class="row"></div>
+        <label>Profissão:</label><input type="text"/>
+        <select name="prof">
+            <option value="">Selecione a área</option>
+            <option value="adm">Administrativo</option>
+            <option value="dia">Diarista</option>
+            <option value="ped">Pedreiro</option>
+            <option value="pin">Pintor</option>
+            <option value="ele">Eletricista</option>
+            <option value="ele">Serviços gerais</option>
+            <option value="out">Outros</option>
+        </select>    
+        <label>Tempo de Experiência:</label>
+        <select name="prof">
+            <option value="">Selecione sua experiência</option>
+            <option value="um-tres">De 1 a 3 anos</option>
+            <option value="tres-cinco">De 3 a 5 anos</option>
+            <option value="cinco-dez">De 5 a 10 anos</option>
+            <option value="dez-mais">10 anos ou mais</option>
+        </select>
+        <label>Envie seu currículo</label><input type="file"/>
+        </div>
+    </fieldset>
+
+    <fieldset>
+    <legend>Contato</legend>
+        <div class="row">
+            <label>Telefone:</label><input type="number"/><br><blockquote>Esse número não ficará visível no seu perfil.</blockquote>
+            <label>WhatsApp:</label><input type="radio" name="contact" value="sim">Sim
+            <input type="radio" name="contact" value="não">Não
+            <label>E-mail:</label><input type="text"/>
+            <label>Senha:</label><input type="password" name="password"/>
+            <label>Confirmar senha:</label><input type="password" name="password"/>
+        </div>
+    </fieldset>
+
+    <fieldset>
+    <legend>Anúncio</legend>
+        <div class="row">
+            <label>Título:</label><input type="text" name="title"><br>
+            <label>Mensagem:</label>
+            <textarea rows="10" cols="30" name="msg"></textarea>
+            <button type="reset">Limpar</button>
+            <button type="submit" onclick="alert('Bem-vindo')">Entrar</button>
+        </div>
+    </fieldset>
+    
+    <fieldset>
+    <legend>Serviços:</legend>
+    <h4>Envie fotos dos seus últimos serviços para que seus possíveis clientes possam ver.</h4><input type="file" multiple>
+
+    </fieldset>
+</body>
+</html>
